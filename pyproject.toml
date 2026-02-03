@@ -1,9 +1,9 @@
 [project]
 name = "diet-api"
 version = "0.1.0"
-description = "Add your description here"
+description = "API de informações nutricionais com inteligencia artificial."
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.128.0",
     "google-genai>=1.61.0",

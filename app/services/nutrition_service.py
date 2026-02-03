@@ -20,7 +20,6 @@ def get_nutrition(
         .first()
     )
 
-    # ✅ CACHE HIT
     if cached:
         return NutritionResponse(
             alimento=cached.alimento,
@@ -32,7 +31,6 @@ def get_nutrition(
             fibras_g=cached.fibras_g,
         )
 
-    # ❌ CACHE MISS → chama IA
     prompt = f"{quantidade} de {alimento}"
     data = consultar_nutricao(prompt)
 

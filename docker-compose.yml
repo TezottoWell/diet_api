@@ -1,0 +1,16 @@
+services:
+  api:
+    build: .
+    container_name: diet-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - app/.env
+    environment:
+      - DATABASE_URL=sqlite:////data/nutrition.db
+    volumes:
+      - diet_data:/data
+    restart: always
+
+volumes:
+  diet_data:

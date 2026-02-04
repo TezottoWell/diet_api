@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.env
+.git/
+.gitignore
+.python-version
+uv.lock
+pyproject.toml
+README.md
+*.db
+*.sqlite3
